@@ -41,7 +41,6 @@ while lineString:
 
         line2String = inputFileObj.readline()
         line2Data = line2String.split()
-        print(line2Data)
         
        
     # get attributes from next line
