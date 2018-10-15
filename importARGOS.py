@@ -18,3 +18,25 @@ import sys,os, arcpy
 
 inputFile = 'V:/ARGOSTracking/Data/ARGOSData/1997dg.txt'
 outputFC = "V:/ARGOSTracking/Scratch/ARGOStrack.shp"
+
+# open the ARGOS data file for reading
+
+inputFileObj = open(inputFile, 'r')
+
+# while loop: get the first of the line
+
+lineString = inputFileObj.readline()
+
+while lineString:
+                                # set code to only run if line contains date 
+    if "Date :" in lineString:
+
+# split the line string into list
+        lineList = lineString.split()
+
+        print(lineString)
+        
+
+
+    #get next line
+    lineString = inputFileObj.readline()
